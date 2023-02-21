@@ -2,7 +2,9 @@
 from flask import Flask, render_template, request
 from chatterbot import ChatBot
 from chatterbot.trainers import ChatterBotCorpusTrainer
-
+import spacy
+from spacy.cli.download import download
+download(model="en_core_web_sm")
 app = Flask(__name__)
 # create chatbot
 englishBot = ChatBot("Chatterbot", storage_adapter="chatterbot.storage.SQLStorageAdapter")
