@@ -4,3 +4,4 @@ setuptools==65.4.0
 
 Flask~=2.2.3
 ChatterBot~=1.0.4
+spacy~=3.5.0
